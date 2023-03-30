@@ -1,0 +1,106 @@
+body {
+    background-color: var(--light-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    max-width: 1150px;
+    grid-template-areas: "txt-daniel txt-daniel txt-jonathan txt-kira"
+                         "txt-jeanette txt-patrick txt-patrick txt-kira";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: white solid 2px;
+    margin-right: 10px;
+}
+
+.txt-patrick .info img {
+    border: var(--moderate-violet) solid 2px;
+}
+
+.info .card-user .name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.info .card-user .title {
+    color: hsl(0, 0%, 81%);
+}
+
+.card-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.card-detail {
+    color: hsl(0, 0%, 81%);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.card-heading-1 {
+    color: var(--very-dark-blackish-blue);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card-detail-1 {
+    color: var(--very-dark-grayish-blue);
+    line-height: 1.5;   
+}
+
+.txt-daniel {
+    grid-area: txt-daniel;
+    background: url(../images/bg-pattern-quotation.svg) no-repeat 80% 0;
+    background-color: var(--moderate-violet);
+}
+
+.txt-jonathan {
+    grid-area: txt-jonathan;
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.txt-patrick {
+    grid-area: txt-patrick;
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.txt-jeanette {
+    grid-area: txt-jeanette;
+}
+
+.txt-kira {
+    grid-area: txt-kira ;
+}
+
+.txt-jeanette, .txt-kira {
+    background-color: var(--white);
+}

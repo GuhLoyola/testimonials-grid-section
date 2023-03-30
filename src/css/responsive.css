@@ -1,0 +1,11 @@
+@media(max-width: 425px) {
+    .testimonial {
+        padding: 20px 30px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 40px;
+    }
+}
